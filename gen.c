@@ -413,8 +413,14 @@ static void emit_binop_int_arith(Node *node) {
             emit("sub A, B");
             break;
         case '*':
+            emit("mul A, B");
+            break;
         case '/':
+            emit("div A, B");
+            break;
         case '%':
+            emit("mod A, B");
+            break;
         case '^':
         case OP_SAL:
         case OP_SAR:
